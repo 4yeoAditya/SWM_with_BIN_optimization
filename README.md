@@ -32,11 +32,11 @@ ward KML + population ──► road network (OSM, directed)  ──► candidat
 
 **Demand and bin count.** With ward population *P*, per-capita rate *r*, collection interval *D*:
 
-$$W = P \cdot r \cdot D, \qquad N = \left\lceil \frac{W\,(1+\sigma)}{V\,\rho\,\varepsilon} \right\rceil$$
+$W = P \cdot r \cdot D, \qquad N = \left\lceil \frac{W\,(1+\sigma)}{V\,\rho\,\varepsilon} \right\rceil$
 
 **Bin placement (capacitated p-median, weighted-sum objective).** For a set *S* of *N* candidate nodes:
 
-$$J(S) = \alpha\,\frac{J_w(S)-J_w^{*}}{J_w^{nadir}-J_w^{*}} \;+\; \beta\,\frac{J_t(S)-J_t^{*}}{J_t^{nadir}-J_t^{*}}$$
+$J(S) = \alpha\,\frac{J_w(S)-J_w^{*}}{J_w^{nadir}-J_w^{*}} \;+\; \beta\,\frac{J_t(S)-J_t^{*}}{J_t^{nadir}-J_t^{*}}$
 
 - *J<sub>w</sub>* — demand-weighted mean walking distance from a demand block to its assigned bin (network distance, metres)
 - *J<sub>t</sub>* — mean truck distance from a bin to the depot on the directed street network (metres)
