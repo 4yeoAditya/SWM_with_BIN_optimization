@@ -153,26 +153,7 @@ All assumptions live in the `CFG` dictionary at the top of `pipeline.py`.
   date next to your results; OSM changes over time.
 - **Waste parameters:** Delhi Pollution Control Committee, annual reports on SWM Rules 2016 (Form V), 2021-22 to 2023-24.
 
----
 
-## Results
-
-> *Replace this section with the output of the full-ward run (`results.csv`) before publishing.*
-
-The table below is from an earlier **pilot configuration** (15,000 people, 80 demand points, 31 bins) and is kept only to
-show the output format. **Do not cite it as a Ward 113 result.**
-
-| Placement | Router | Bins | Mean walk (m) | Trips | Total km | Reduction vs k-means + NN |
-|---|---|---|---|---|---|---|
-| k-means + snap | NN | 31 | 88.3 | 4 | 18.29 | – |
-| k-means + snap | OR-Tools GLS | 31 | 88.3 | 4 | 13.09 | 28.4 % |
-| capacitated p-median | NN | 31 | 73.8 | 4 | 18.51 | −1.2 % |
-| capacitated p-median | OR-Tools GLS | 31 | 73.8 | 4 | 12.71 | 30.5 % |
-
-Observations from the pilot that the full run should re-check: naive nearest-bin assignment overloads 12 of 31 bins
-(the capacity-constrained LP exists to prevent this); most of the distance saving comes from routing, not placement.
-
----
 
 ## Limitations
 
