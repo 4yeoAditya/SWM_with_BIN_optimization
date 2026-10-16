@@ -36,7 +36,9 @@ $W = P \cdot r \cdot D, \qquad N = \left\lceil \frac{W\,(1+\sigma)}{V\,\rho\,\va
 
 **Bin placement (capacitated p-median, weighted-sum objective).** For a set *S* of *N* candidate nodes:
 
-$J(S) = \alpha\,\frac{J_w(S)-J_w^{*}}{J_w^{nadir}-J_w^{*}} \;+\; \beta\,\frac{J_t(S)-J_t^{*}}{J_t^{nadir}-J_t^{*}}$
+```math
+J(S) = \alpha \cdot \frac{J_w(S) - J_w^{\mathrm{ideal}}}{J_w^{\mathrm{nadir}} - J_w^{\mathrm{ideal}}} + \beta \cdot \frac{J_t(S) - J_t^{\mathrm{ideal}}}{J_t^{\mathrm{nadir}} - J_t^{\mathrm{ideal}}}
+```
 
 - *J<sub>w</sub>* — demand-weighted mean walking distance from a demand block to its assigned bin (network distance, metres)
 - *J<sub>t</sub>* — mean truck distance from a bin to the depot on the directed street network (metres)
